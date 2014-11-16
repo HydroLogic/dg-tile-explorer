@@ -12,27 +12,27 @@
   
 ### Python (Mac OS X)
       
-      Installing Python on Mac OS X. Follow the instructions [here](http://docs.python-guide.org/en/latest/starting/install/osx).
+Install Python for Mac OS X. Follow the instructions [here](http://docs.python-guide.org/en/latest/starting/install/osx).
 
 ### GDAL (Mac OS X)
     
-      Installing GDAL on Mac OS X. Follow the instructions [here](https://github.com/bloomreach/s4cmd).
+Install GDAL for Mac OS X. Follow the instructions [here](https://github.com/bloomreach/s4cmd).
 
 ### s4cmd
 
-      Install s4cmd: pip install s4cmd - Follow the instructions [here](https://github.com/bloomreach/s4cmd).
+Install s4cmd: pip install s4cmd - Follow the instructions [here](https://github.com/bloomreach/s4cmd).
 
-      Do not forget to set the S3_ACCESS_KEY and S3_SECRET_KEY environment variables to contain your S3 credentials.
+Do not forget to set the S3_ACCESS_KEY and S3_SECRET_KEY environment variables to contain your S3 credentials.
 
 ## Process
 
 ### Get a geoTif from digital Globe
 
-      Download Images from [https://services.digitalglobe.com](https://services.digitalglobe.com).
+Download Images from [https://services.digitalglobe.com](https://services.digitalglobe.com).
 
 ### Convert images to tiles
 
-      gdal2tiles.py -z 1-18 image_file_name.tif [folder]
+      gdal2tiles.py -z 1-18 image_file_name.tif [target folder]
 
 ### Upload tiles to Amazon s3
       
