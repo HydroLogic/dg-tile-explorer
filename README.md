@@ -29,7 +29,7 @@ Do not forget to set the S3_ACCESS_KEY and S3_SECRET_KEY environment variables t
 ### Get a geoTif from digital Globe
 
 Download Images from [https://services.digitalglobe.com](https://services.digitalglobe.com) or
-Get the bbox and select a featureid from the  [http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WFS.pdf](WFS) service as an identifier for the getCovertures from the[http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WCS.pdf]( WCS) service.
+Get the bbox and select a featureid from the   [WFS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WFS.pdf) service as an identifier for the getCovertures from the [WCS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WCS.pdf) service.
 
 ### Convert images to tiles
 
