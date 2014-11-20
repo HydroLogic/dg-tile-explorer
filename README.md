@@ -28,8 +28,12 @@ Do not forget to set the S3_ACCESS_KEY and S3_SECRET_KEY environment variables t
 
 ### Get a geoTif from digital Globe
 
-Download Images from [https://services.digitalglobe.com](https://services.digitalglobe.com) or
-Get the bbox and select a featureid from the   [WFS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WFS.pdf) service as an identifier for the getCovertures from the [WCS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WCS.pdf) service.
+Download Images from [digitalglobe](https://services.digitalglobe.com) or
+Get the bbox and select a featureid from the   [WFS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WFS.pdf) service as an identifier
+`https://services.digitalglobe.com/catalogservice/wfsaccess?SERVICE=WFS&REQUEST=GetFeature&maxFeatures=1&typeName=DigitalGlobe:FinishedFeature&VERSION=1.1.1&CONNECTID=<CONNECTID>&BBOX=<Your coordinates>&width=3000&height=3000`
+
+Next you will put the identifier for getCovertures from the [WCS](http://www.digitalglobe.com/sites/default/files/dgcs/DGCS_DeveloperGuide_WCS.pdf) service.
+`https://services.digitalglobe.com/deliveryservice/wcsaccess?service=WCS&request=GetCoverage&connectid=<CONNECTID>&identifier=<IDENTIFIER>&version=1.1.1&boundingBox=<BBOX>&Output:format=image/geotiff`
 
 ### Convert images to tiles
 
